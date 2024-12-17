@@ -1,0 +1,48 @@
+/* General container for the notes list */
+.grid {
+  display: grid;
+  gap: 1rem; /* Space between grid items */
+  padding: 1rem;
+}
+
+/* Responsive grid column settings */
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.sm\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.md\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Styling for individual note items */
+.note-item {
+  background-color: #f9f9f9; /* Light gray background for notes */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for note items */
+.note-item:hover {
+  transform: translateY(-5px); /* Lift slightly on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Media queries for responsive behavior */
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,73 @@
+/* AddNote.css */
+
+/* Container for the Add Note section */
+.add-note {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff0f0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  /* Input field for the Note Title */
+  .add-note input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-note input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Textarea for the Note Content */
+  .add-note textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none;
+    transition: border-color 0.3s ease;
+    min-height: 100px;
+  }
+  
+  .add-note textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Information about characters and lines */
+  .add-note .text-info {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  /* Add Note Button */
+  .add-note button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-note button:hover {
+    background-color: #026dde;
+  }
+  
+  .header-data{
+    
+    text-align: center;
+    padding: 10px;
+  }
